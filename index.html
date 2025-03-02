@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interaktywny Spis Linków</title>
+  <style>
+    /* Stylizacja inspirowana kolorami NVIDIA */
+    body {
+      background-color: #1c1c1c;
+      color: #ffffff;
+      font-family: Arial, sans-serif;
+      margin: 20px;
+    }
+    h1 {
+      text-align: center;
+      margin-bottom: 10px;
+    }
+    .logo {
+      display: block;
+      margin: 0 auto 20px;
+      width: 200px;
+    }
+    .search-box {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #76B900;
+      border-radius: 5px;
+      background-color: #1c1c1c;
+      color: #ffffff;
+    }
+    .link-item {
+      background-color: #2a2a2a;
+      padding: 15px;
+      margin: 10px 0;
+      border-radius: 5px;
+      transition: background-color 0.3s;
+    }
+    .link-item:hover {
+      background-color: #333333;
+    }
+    a {
+      color: #76B900;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    p {
+      margin: 5px 0 0 0;
+      font-size: 0.95em;
+    }
+  </style>
+</head>
+<body>
+  <!-- Logo NVIDIA -->
+  <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Nvidia_logo.svg/2560px-Nvidia_logo.svg.png" alt="NVIDIA Logo" class="logo">
+
+  <h1>Interaktywny Spis Linków</h1>
+  
+  <!-- Pole wyszukiwania -->
+  <input type="text" id="searchInput" class="search-box" placeholder="Wyszukaj linki...">
+
+  <!-- Lista linków -->
+  <div id="linkContainer">
+    <div class="link-item">
+      <a href="https://wiki.seeedstudio.com/local_ai_ssistant/" target="_blank">https://wiki.seeedstudio.com/local_ai_ssistant/</a>
+      <p>Dokumentacja projektu Local AI Assistant na platformie SeeedStudio.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://www.jetson-ai-lab.com/tutorial_comfyui_flux.html" target="_blank">https://www.jetson-ai-lab.com/tutorial_comfyui_flux.html</a>
+      <p>Tutorial dotyczący ComfyUI Flux dostępny na Jetson AI Lab.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://repo.download.nvidia.com/jetson/" target="_blank">https://repo.download.nvidia.com/jetson/</a>
+      <p>Oficjalne repozytorium NVIDIA z oprogramowaniem dla platformy Jetson.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://forums.developer.nvidia.com/t/l4t-ml-r35-3-1-py3-download-link-missing-ngc/287107" target="_blank">https://forums.developer.nvidia.com/t/l4t-ml-r35-3-1-py3-download-link-missing-ngc/287107</a>
+      <p>Wątek na forum deweloperów NVIDIA dotyczący problemów z linkiem pobierania L4T-ML R35.3.1 dla Python 3.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://forums.developer.nvidia.com/t/unable-to-connect-cuda-with-yolov8-on-jetson-xavier-agx/308637/6" target="_blank">https://forums.developer.nvidia.com/t/unable-to-connect-cuda-with-yolov8-on-jetson-xavier-agx/308637/6</a>
+      <p>Dyskusja na forum NVIDIA o problemach z połączeniem CUDA z YOLOv8 na Jetson Xavier AGX.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048" target="_blank">https://forums.developer.nvidia.com/t/pytorch-for-jetson/72048</a>
+      <p>Wątek na forum NVIDIA dotyczący instalacji i konfiguracji PyTorch na platformie Jetson.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html" target="_blank">https://docs.nvidia.com/deeplearning/frameworks/install-pytorch-jetson-platform/index.html</a>
+      <p>Oficjalna dokumentacja NVIDIA opisująca instalację PyTorch na platformie Jetson.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://nvidia-jetson.piveral.com/jetson-orin-nano/installing-torchvision-0-15-1-on-jetson-orin-nano-compilation-and-import-issues/" target="_blank">https://nvidia-jetson.piveral.com/jetson-orin-nano/installing-torchvision-0-15-1-on-jetson-orin-nano-compilation-and-import-issues/</a>
+      <p>Przewodnik dotyczący instalacji torchvision 0.15.1 na Jetson Orin Nano, z problemami kompilacji i importu.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://www.osc.edu/resources/getting_started/howto/howto_add_python_packages_using_the_conda_package_manager/howto_use" target="_blank">https://www.osc.edu/resources/getting_started/howto/howto_add_python_packages_using_the_conda_package_manager/howto_use</a>
+      <p>Poradnik dotyczący dodawania pakietów Pythona przy użyciu menedżera Conda na stronie OSC.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/pytorch/vision" target="_blank">https://github.com/pytorch/vision</a>
+      <p>Repozytorium GitHub projektu Torchvision, biblioteki do przetwarzania obrazów w PyTorch.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://nvidia-jetson.piveral.com/jetson-orin-nano/cuda-and-cudnn-compatibility-issues-on-nvidia-jetson/" target="_blank">https://nvidia-jetson.piveral.com/jetson-orin-nano/cuda-and-cudnn-compatibility-issues-on-nvidia-jetson/</a>
+      <p>Artykuł omawiający kwestie kompatybilności CUDA i cuDNN na platformach Nvidia Jetson.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://forums.developer.nvidia.com/t/how-to-install-opencv-with-cuda-on-jetson-orin-nx-8gb/272401/7" target="_blank">https://forums.developer.nvidia.com/t/how-to-install-opencv-with-cuda-on-jetson-orin-nx-8gb/272401/7</a>
+      <p>Wątek na forum NVIDIA opisujący instalację OpenCV z CUDA na Jetson Orin NX 8GB.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/dusty-nv/stable-diffusion-webui-tensorrt" target="_blank">https://github.com/dusty-nv/stable-diffusion-webui-tensorrt</a>
+      <p>Repozytorium GitHub projektu Stable Diffusion WebUI z optymalizacją TensorRT, autorstwa dusty-nv.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-ml/tags" target="_blank">https://catalog.ngc.nvidia.com/orgs/nvidia/containers/l4t-ml/tags</a>
+      <p>Katalog kontenerów L4T-ML w Nvidia GPU Cloud (NGC).</p>
+    </div>
+    <div class="link-item">
+      <a href="https://developer.nvidia.com/deepstream-sdk" target="_blank">https://developer.nvidia.com/deepstream-sdk</a>
+      <p>Oficjalna strona NVIDIA DeepStream SDK, narzędzia do analizy wideo.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/" target="_blank">https://developer.download.nvidia.com/compute/redist/jp/v51/pytorch/</a>
+      <p>Strona pobierania NVIDIA z paczkami PyTorch dla platformy Jetson.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/NVIDIA/TensorRT/issues/1741" target="_blank">https://github.com/NVIDIA/TensorRT/issues/1741</a>
+      <p>Wątek dyskusyjny na GitHub dotyczący problemów z NVIDIA TensorRT (Issue #1741).</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/jetsonhacks/installROS2" target="_blank">https://github.com/jetsonhacks/installROS2</a>
+      <p>Repozytorium GitHub zawierające skrypty do instalacji ROS2 na platformach Jetson autorstwa JetsonHacks.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image" target="_blank">https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image</a>
+      <p>Blog ogłaszający, że Ollama jest dostępna jako oficjalny obraz Dockera.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://ollama.com/library/llama3.2:1b" target="_blank">https://ollama.com/library/llama3.2:1b</a>
+      <p>Strona biblioteki Ollama dotycząca modelu Llama 3.2 (1B parametrów).</p>
+    </div>
+    <div class="link-item">
+      <a href="https://wiki.seeedstudio.com/run_vlm_on_recomputer/" target="_blank">https://wiki.seeedstudio.com/run_vlm_on_recomputer/</a>
+      <p>Dokumentacja na Wiki SeeedStudio dotycząca uruchamiania VLM na platformie Recomputer.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://hub.docker.com/r/ollama/ollama" target="_blank">https://hub.docker.com/r/ollama/ollama</a>
+      <p>Strona na Docker Hub z oficjalnym obrazem Dockera Ollama.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://wiki.seeedstudio.com/Generative_AI_Intro/" target="_blank">https://wiki.seeedstudio.com/Generative_AI_Intro/</a>
+      <p>Wprowadzenie do generatywnej sztucznej inteligencji na Wiki SeeedStudio.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://docs.anythingllm.com/agent/custom/developer-guide" target="_blank">https://docs.anythingllm.com/agent/custom/developer-guide</a>
+      <p>Przewodnik dla deweloperów dotyczący tworzenia niestandardowych agentów w AnythingLLM.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/dusty-nv/jetson-containers?tab=readme-ov-file" target="_blank">https://github.com/dusty-nv/jetson-containers?tab=readme-ov-file</a>
+      <p>Repozytorium GitHub zawierające kontenery Jetson autorstwa dusty-nv.</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/dusty-nv/stable-diffusion-webui-tensorrt" target="_blank">https://github.com/dusty-nv/stable-diffusion-webui-tensorrt</a>
+      <p>Repozytorium GitHub projektu Stable Diffusion WebUI z optymalizacją TensorRT, autorstwa dusty-nv. (Duplikat)</p>
+    </div>
+    <div class="link-item">
+      <a href="https://github.com/tymothy001/JetsonOrinNX16Gbscript" target="_blank">https://github.com/tymothy001/JetsonOrinNX16Gbscript</a>
+      <p>Repozytorium GitHub zawierające skrypt dla Jetson Orin NX 16GB, autorstwa tymothy001.</p>
+    </div>
+  </div>
+
+  <!-- Skrypt obsługujący wyszukiwanie -->
+  <script>
+    const searchInput = document.getElementById('searchInput');
+    searchInput.addEventListener('input', function() {
+      const filter = searchInput.value.toLowerCase();
+      const items = document.getElementsByClassName('link-item');
+      for (let i = 0; i < items.length; i++) {
+        const text = items[i].textContent.toLowerCase();
+        items[i].style.display = text.includes(filter) ? '' : 'none';
+      }
+    });
+  </script>
+</body>
+</html>
+
